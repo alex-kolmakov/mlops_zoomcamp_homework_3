@@ -1,0 +1,28 @@
+letter_123:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 10000
+    weeks: null
+  settings: {}
+march_yellow_taxi:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 10000
+  settings:
+    transform_taxi_data: {}
+ta:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 123
+  settings:
+    transform_taxi_data: {}
+yellow_taxi_march:
+  object_type: pipeline
+  object_uuid: data_preparation
+  outdated_after:
+    seconds: 10000
+  settings:
+    transform_taxi_data: {}

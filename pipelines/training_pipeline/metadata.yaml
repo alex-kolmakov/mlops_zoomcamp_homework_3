@@ -1,0 +1,60 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    global_data_product:
+      uuid: yellow_taxi_march
+  downstream_blocks:
+  - fit_vectorizer
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: yellow_taxi_march_Data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: yellow_taxi_march_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: fit_vectorizer
+  retry_config: null
+  status: updated
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - yellow_taxi_march_data
+  uuid: fit_vectorizer
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-05 13:24:40.025044+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: training_pipeline
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+updated_at: '2024-06-05T13:50:48+00:00'
+uuid: training_pipeline
+variables_dir: /home/src/mage_data/src
+widgets: []
